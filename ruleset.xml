@@ -2,20 +2,20 @@
 <ruleset name="jmblanquer-ccs">
     <description>Estándar personalizado basado en Moodle Extra con ajustes estrictos</description>
 
-    <!-- Extiende moodle-extra -->
     <rule ref="moodle"/>
+    <rule ref="moodle-extra"/>
 
-    <!-- Reglas adicionales que queremos aplicar -->
+    <!-- Reglas adicionales disponibles -->
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
-    <rule ref="Generic.Arrays.TrailingComma"/>
     <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
     <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing"/>
     <rule ref="Generic.CodeAnalysis.EmptyStatement"/>
     <rule ref="Generic.ControlStructures.InlineControlStructure"/>
     <rule ref="Generic.Files.LineLength"/>
 
-    <!-- Ignora sniffs no disponibles para evitar errores -->
-    <exclude name="PHPCompatibility"/>
-    <exclude name="Universal"/>
-    <exclude name="NormalizedArrays"/>
+    <!-- Regla para forzar coma final -->
+    <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
+    
+    <!-- Excluir sniffs no disponibles si no los usas -->
+    <exclude-pattern>*/vendor/*</exclude-pattern>
 </ruleset>
