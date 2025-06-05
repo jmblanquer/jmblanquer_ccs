@@ -1,0 +1,13 @@
+{
+  "name": "jmblanquer/jmblanquer-ccs",
+  "require": {
+    "moodlehq/moodle-cs": "^3.2",
+    "phpcompatibility/php-compatibility": "^9.3",
+    "slevomat/coding-standard": "^8.12"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
