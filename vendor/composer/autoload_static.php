@@ -4,9 +4,17 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit0f75e6730ed5814bbb6d33cec210a97d
+class ComposerStaticInitbc243b3dda9fc46f79028921a86ed8cb
 {
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'SlevomatCodingStandard\\' => 23,
+        ),
+        'P' => 
+        array (
+            'PHPStan\\PhpDocParser\\' => 21,
+        ),
         'M' => 
         array (
             'MoodleHQ\\MoodleCS\\moodle\\' => 25,
@@ -18,6 +26,14 @@ class ComposerStaticInit0f75e6730ed5814bbb6d33cec210a97d
     );
 
     public static $prefixDirsPsr4 = array (
+        'SlevomatCodingStandard\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/slevomat/coding-standard/SlevomatCodingStandard',
+        ),
+        'PHPStan\\PhpDocParser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpstan/phpdoc-parser/src',
+        ),
         'MoodleHQ\\MoodleCS\\moodle\\' => 
         array (
             0 => __DIR__ . '/..' . '/moodlehq/moodle-cs/moodle',
@@ -72,9 +88,9 @@ class ComposerStaticInit0f75e6730ed5814bbb6d33cec210a97d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit0f75e6730ed5814bbb6d33cec210a97d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit0f75e6730ed5814bbb6d33cec210a97d::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit0f75e6730ed5814bbb6d33cec210a97d::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitbc243b3dda9fc46f79028921a86ed8cb::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitbc243b3dda9fc46f79028921a86ed8cb::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitbc243b3dda9fc46f79028921a86ed8cb::$classMap;
 
         }, null, ClassLoader::class);
     }
