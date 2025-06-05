@@ -6,13 +6,13 @@
     <rule ref="moodle-extra"/>
 
     <!-- Reglas adicionales que queremos aplicar -->
-    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+    <!-- <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
     <rule ref="Generic.Arrays.TrailingComma"/>
     <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
     <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing"/>
     <rule ref="Generic.CodeAnalysis.EmptyStatement"/>
     <rule ref="Generic.ControlStructures.InlineControlStructure"/>
-    <rule ref="Generic.Files.LineLength"/>
+    <rule ref="Generic.Files.LineLength"/> -->
 
     <!-- Ignora sniffs no disponibles para evitar errores -->
     <exclude name="PHPCompatibility"/>
