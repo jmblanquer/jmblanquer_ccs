@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="jmblanquer-css">
+<ruleset name="jmblanquer-ccs">
     <description>Estándar personalizado basado en Moodle Extra con ajustes estrictos</description>
 
     <!-- Extiende moodle-extra -->
