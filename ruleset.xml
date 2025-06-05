@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ruleset name="jmblanquer-css">
+    <description>Estándar personalizado basado en Moodle Extra con ajustes estrictos</description>
+
+    <!-- Extiende moodle-extra -->
+    <rule ref="moodle-extra"/>
+
+    <!-- Reglas adicionales que queremos aplicar -->
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+    <rule ref="Generic.Arrays.TrailingComma"/>
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
+    <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing"/>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement"/>
+    <rule ref="Generic.ControlStructures.InlineControlStructure"/>
+    <rule ref="Generic.Files.LineLength"/>
+
+    <!-- Ignora sniffs no disponibles para evitar errores -->
+    <exclude name="PHPCompatibility"/>
+    <exclude name="Universal"/>
+    <exclude name="NormalizedArrays"/>
+</ruleset>
