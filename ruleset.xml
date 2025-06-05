@@ -3,7 +3,7 @@
     <description>Estándar personalizado basado en Moodle Extra con ajustes estrictos</description>
 
     <!-- Extiende moodle-extra -->
-<!--     <rule ref="moodle-extra"/> -->
+    <rule ref="moodle"/>
 
     <!-- Reglas adicionales que queremos aplicar -->
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
